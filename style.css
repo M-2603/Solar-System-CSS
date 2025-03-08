@@ -1,0 +1,75 @@
+/* .loader{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   border: 15px solid yellow;
+   border-top: 15px solid aqua;
+   animation: spinanimate  1s ease-in 1s infinite normal ;
+}
+@keyframes spinanimate {
+   from {transform: rotate(0deg);}
+   to {transform: rotate(360deg);}
+} */
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.solar-system{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Galaxy.jpg);
+  
+
+}
+.sun{
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    background-color: #ec9513;
+    position: absolute;
+    box-shadow: 0 0 75px rgba(255, 141, 0, 1);
+}
+.earth{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(earth.webp);
+    position:relative;
+    border: none;
+    background-size: cover;
+    animation: earth-orbit 7s linear infinite;
+}
+.earth:after{
+    content: "";
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(moon.webp);
+    border: none;
+    background-size: cover;
+    animation: moon-orbit 3.5s linear infinite;
+}
+@keyframes moon-orbit{
+from{
+    transform: rotate(0deg) translate(75px) rotate(0deg);
+}
+to{
+    transform: rotate(360deg) translate(75px) rotate(-360deg);
+}
+}
+@keyframes earth-orbit{
+    from{
+        transform: rotate(0deg) translate(220px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(220px) rotate(-360deg);
+    }
+    }
+    
