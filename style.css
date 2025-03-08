@@ -1,17 +1,3 @@
-/* .loader{
-   width: 200px;
-   height: 200px;
-   border-radius: 50%;
-   border: 15px solid yellow;
-   border-top: 15px solid aqua;
-   animation: spinanimate  1s ease-in 1s infinite normal ;
-}
-@keyframes spinanimate {
-   from {transform: rotate(0deg);}
-   to {transform: rotate(360deg);}
-} */
-
-
 body {
     margin: 0px;
     padding: 0px;
@@ -24,8 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(Galaxy.jpg);
-  
-
 }
 .sun{
     height: 175px;
